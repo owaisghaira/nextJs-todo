@@ -13,7 +13,7 @@ const Header = () => {
     
   }
   return (
-    <div className='sticky top-0 w-full border-b-4 border-indigo-400 left-0 flex justify-between p-4'>
+    <div className='sticky z-[100] top-0 w-full border-b-4 bg-slate-900 border-indigo-400 left-0 flex justify-between p-4'>
       <h2 className='text-3xl'>Todo List</h2>
       <button onClick={handleLogout} className="duration-300 hover:opacity-40 cursor:pointer">Logout</button>
     </div>
