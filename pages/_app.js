@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import { AuthProvider } from '../context/AuthContext'
 import '../styles/globals.css'
+import 'react-toastify/dist/ReactToastify.css';
 
 function MyApp({ Component, pageProps }) {
   return (

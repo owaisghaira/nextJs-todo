@@ -1,22 +1,17 @@
 
 import React from 'react';
 
-const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
-  const pageNumbers = [];
-  console.log('totalPosts',totalPosts)
-  for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
-    pageNumbers.push(i);
-  }
-
+const Pagination = ({ backward, forward,lastVisibleRecord }) => {
   return (
-    <div class="container mx-auto px-4">
-      <nav class="flex flex-row flex-nowrap justify-between md:justify-center items-center" aria-label="Pagination">
-        {pageNumbers.map(number => (
-          <a onClick={() => paginate(number)} class="hidden md:flex w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-200 bg-white text-black hover:border-gray-300" href="#" title="Page 1">
-            {number}
-          </a>
-        ))}
-      </nav>
+    <div className=" flex items-center justify-center mt-4 space-x-3">
+      <button disabled={lastVisibleRecord.length} onClick={backward} className="bg-[#215Bf0] text-white font-bold py-2 px-4 rounded w-[150px]">
+        <i className="fa-solid fa-angles-left mr-3"></i>
+        Previous
+      </button>
+      <button onClick={forward} className="bg-[#215Bf0] text-white font-bold py-2 px-4 rounded w-[150px]">
+        Next
+        <i className="fa-solid fa-angles-right ml-3"></i>
+      </button>
     </div>
   );
 };
