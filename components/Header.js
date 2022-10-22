@@ -22,7 +22,7 @@ const Header = () => {
         </div>
 }
         {currentUser &&
-          <button onClick={handleLogout} class="bg-[#215Bf0] text-white font-bold py-2 px-4 rounded">
+          <button onClick={handleLogout} className="bg-[#215Bf0] text-white font-bold py-2 px-4 rounded">
             Logout
           </button>}
       </div>

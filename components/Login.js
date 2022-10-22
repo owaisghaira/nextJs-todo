@@ -63,7 +63,7 @@ export default function Login() {
               </div>
             </div>
             <div className="border-t border-solid mt-6 md:mt-12 pt-4">
-              <p className="text-gray-500 text-center">{isLoggingIn ? "Already have an account" : "not have account"} <a href="#" onClick={() => setIsLoggingIn(!isLoggingIn)} class="text-indigo-600 hover:underline">{isLoggingIn ? "Sign In" : "Signup"}</a></p>
+              <p className="text-gray-500 text-center">{isLoggingIn ? "Already have an account" : "not have account"} <a href="#" onClick={() => setIsLoggingIn(!isLoggingIn)} className="text-indigo-600 hover:underline">{isLoggingIn ? "Sign In" : "Signup"}</a></p>
             </div>
             <ToastContainer />
           </div>

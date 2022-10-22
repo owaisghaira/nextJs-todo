@@ -106,7 +106,7 @@ const TodoList = () => {
             </div>
             <ol className="text-white space-y-3 overflow-y-auto">
               {loading ?
-                <div class="w-10 p-4 h-10 rounded-full animate-spin
+                <div className="w-10 p-4 h-10 rounded-full animate-spin
                      border-x-4 border-solid border-white border-t-transparent"></div> :
                 todos.map((todo) => (
                   <>
